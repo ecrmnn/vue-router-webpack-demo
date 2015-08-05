@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Router Demo</title>
+</head>
+<body>
+
+    <div id="app" v-cloak>
+        <header>
+            <ul>
+                <li><a v-link="/">Home</a></li>
+                <li><a v-link="/about">About</a></li>
+                <li><a v-link="/users">Users</a></li>
+                <li><a v-link="/artists">Artists</a></li>
+                <li><a v-link="/users/all">Redirect to users</a></li>
+            </ul>
+        </header>
+
+        <router-view></router-view>
+
+        <hr/>
+
+        <pre>{{ $data | json 4 }}</pre>
+    </div>
+
+    <script src="/dist/bundle.js"></script>
+</body>
+</html>

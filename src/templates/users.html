@@ -1,0 +1,18 @@
+<h1>Users</h1>
+<hr/>
+
+<div class="user" v-repeat="user: users">
+    <a href="javascript:;" v-on="click: toggleUser(user)">
+        {{ user.name.title }} {{ user.name.first }} {{ user.name.last }}
+    </a>
+
+    <div class="show-user" v-if="user.opened">
+        <strong>Location</strong>
+        <ul>
+            <li>{{ user.location.street }}</li>
+            <li>{{ user.location.city }}</li>
+            <li>{{ user.location.state }}</li>
+            <li>{{ user.location.zip }}</li>
+        </ul>
+    </div>
+</div>

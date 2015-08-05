@@ -1,0 +1,18 @@
+{
+  "name": "vue-router-webpack-demo",
+  "version": "1.0.0",
+  "description": "Simple demo of using Vue.js, Vue resource, Vue Router and Webpack together",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Eckermann <danieleckermann@gmail.com> (http://danieleckermann.com)",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "html-loader": "^0.3.0",
+    "jquery": "^2.1.4",
+    "vue": "^0.12.9",
+    "vue-resource": "^0.1.11",
+    "webpack": "^1.10.5"
+  },
+  "dependencies": {}
+}
